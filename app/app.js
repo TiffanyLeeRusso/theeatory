@@ -1,14 +1,26 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('theEatory', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+  'theEatory.home',
+  'theEatory.location',
+  'ui.bootstrap'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+  //$locationProvider.html5Mode(true);
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/', {
+    templateUrl: 'home/home.html',
+    controller: 'HomeCtrl'
+  });
+
+  $routeProvider.when('/home', { redirectTo: '/' });
+
+  $routeProvider.when('/location', {
+    templateUrl: 'location/location.html',
+    controller: 'LocationCtrl'
+  });
+
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);

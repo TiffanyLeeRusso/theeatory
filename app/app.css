@@ -1,25 +1,46 @@
-/* app css stylesheet */
+/* app.css */
 
-.menu {
+/*
+Teal: #00B2BA
+Brown: #28211F
+*/
+
+html, body { height: 100%; }
+
+#content {
+  height: 100%;
+  background: url('http://lorempixel.com/1024/486/food/5');
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.header {
+  background-color: #28211F;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.header .logo {
+  margin: 67px 20px;
+}
+
+.menu-bar {
+  width: 100%;
+  background: #ccbbaa;
+  position: relative;
+  text-align: center;
+}
+
+.menu-bar>ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
 }
 
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+.menu-bar .menu li {
+  display: inline-block;
+  padding: 20px;
 }
