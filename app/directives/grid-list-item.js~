@@ -1,0 +1,14 @@
+angular.module('theEatory.gridListItem', [])
+
+.directive('gridListItem', function() {
+  return {
+    restrict: 'E',
+    scope: {
+    },
+    template: '<li></li>',
+    controller: ['$scope', function($scope) {
+    }],
+    link: function(scope, element) {
+    }
+  };
+});

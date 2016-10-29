@@ -1,1 +1,5 @@
-<p>Grid of pictures here</p>
+<div ng-controller="HomeCtrl">
+  <ul class="grid">
+    <grid-list-item ng-repeat="picture in pictures">{{picture}}</grid-list-item>
+  </ul>
+</div>

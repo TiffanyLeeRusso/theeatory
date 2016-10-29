@@ -5,6 +5,7 @@ angular.module('theEatory', [
   'ngRoute',
   'theEatory.home',
   'theEatory.location',
+  'theEatory.gridListItem',
   'ui.bootstrap'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
