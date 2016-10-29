@@ -1,7 +1,0 @@
-/* grid-list-item.css */
-
-.grid-item {
-    position: relative;
-display: inline-block;
-margin: 10px;
-}
