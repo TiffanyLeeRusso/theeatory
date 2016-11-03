@@ -5,6 +5,8 @@ This app uses AngularJS to build a grid
 of pictures showing a menu. The user can
 comment on the menu items.
 
+Images provided by http://lorempixel.com.
+
 You can find me at my website here:
 [http://tiffany.lee-russo.com](http://tiffany.lee-russo.com).
 
