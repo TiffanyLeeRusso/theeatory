@@ -1,3 +1,36 @@
 /* home.css */
 
-.grid { list-style: none; }
+.grid {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding:0;
+}
+
+.grid-container {
+  padding-top: 50px;
+}
+
+.grid-container>h2 {
+  text-align: center;
+  padding: 10px;
+  background: #28211F;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 2px;
+  color: #ccbbaa;
+  font-weight: normal;
+}
+
+.list-item-container {
+  display: inline-block;
+  background: #ccbbaa;
+  margin: 20px;
+  width: 40%;
+}
+
+@media all and (max-width: 650px) {
+  .list-item-container {
+    width: 90%;
+  }
+}

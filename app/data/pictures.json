@@ -1,4 +1,4 @@
-{ 
+{
   "pictureData": [
     { "id": 1,
       "width": 200,
@@ -55,76 +55,6 @@
       "name": "All-Beef Cheeseburger",
       "description": "A hearty serving of beef with onion, lettuce, and tomato on a homemade bun.",
       "category": "Entrees"
-    },
-    { "id": 10,
-      "width": 200,
-      "height": 200,
-      "name": "Ciabatta Bread",
-      "description": "Order an extra helping of our homemade ciabatta bread.",
-      "category": "Bread"
-    },
-    { "id": 11,
-      "width": 200,
-      "height": 200,
-      "name": "",
-      "description": "",
-      "category": "Entrees"
-    },
-    { "id": 13,
-      "width": 200,
-      "height": 200,
-      "name": "",
-      "description": "",
-      "category": "Entrees"
-    },
-    { "id": 14,
-      "width": 200,
-      "height": 200,
-      "name": "Boule Bread",
-      "description": "Order an extra helping of our homemade boule bread.",
-      "category": ""
-    },
-    { "id": 15,
-      "width": 200,
-      "height": 200,
-      "name": "",
-      "description": "",
-      "category": ""
-    },
-    { "id": 16,
-      "width": 200,
-      "height": 200,
-      "name": "",
-      "description": "",
-      "category": ""
-    },
-    { "id": 17,
-      "width": 200,
-      "height": 200,
-      "name": "",
-      "description": "",
-      "category": ""
-    },
-    { "id": 18,
-      "width": 200,
-      "height": 200,
-      "name": "",
-      "description": "",
-      "category": ""
-    },
-    { "id": 19,
-      "width": 200,
-      "height": 200,
-      "name": "",
-      "description": "",
-      "category": ""
-    },
-    { "id": 20,
-      "width": 200,
-      "height": 200,
-      "name": "",
-      "description": "",
-      "category": ""
     }
   ]
 }

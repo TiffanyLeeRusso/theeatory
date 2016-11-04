@@ -1,5 +1,24 @@
 <div ng-controller="HomeCtrl">
-  <ul class="grid">
-    <grid-list-item ng-repeat="picture in pictures">{{picture}}</grid-list-item>
-  </ul>
+
+<!-- TODO: add this for real and add in-page anchors
+<div class="menu-bar" style="background:#360B00; color: #ccbbaa;">
+      <ul class="menu">
+        <li style="padding:10px"><a style="border:none; color: #ccbbaa;" href="#home">Entrees</a></li>
+        <li style="padding: 10px"><a href="#location" style="border:none; color: #ccbbaa;">Appetizers</a></li>
+      </ul>
+</div>
+-->
+<!-- TODO: fix empty first element
+  <div ng-repeat="(category, categoryPictures) in picturesByCategory" class="grid-container">
+    <h2>{{category}}</h2>
+    <ul class="grid">
+      <list-item ng-repeat="picture in categoryPictures" class="list-item-container"></grid-list-item>
+    </ul>
+  </div>
+-->
+
+    <ul class="grid">
+      <list-item ng-repeat="picture in pictures" class="list-item-container"></grid-list-item>
+    </ul>
+
 </div>
