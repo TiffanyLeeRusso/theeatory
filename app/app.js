@@ -6,6 +6,7 @@ angular.module('theEatory', [
   'theEatory.home',
   'theEatory.location',
   'theEatory.listItem',
+  'theEatory.goToTop',
   'ui.bootstrap'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

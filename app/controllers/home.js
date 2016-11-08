@@ -2,9 +2,11 @@
 
 angular.module('theEatory.home', ['ngRoute'])
 
-.controller('HomeCtrl', function($scope, $http, $anchorScroll) {
+.controller('HomeCtrl', function($scope, $http, $window, $anchorScroll) {
 
   const BASE_URL = "http://lorempixel.com/[width]/[height]/food/[id]"
+
+  $scope.showGoToTop = false;
 
   $http.get('data/pictures.json')
     .then(function(res){
@@ -22,6 +24,7 @@ angular.module('theEatory.home', ['ngRoute'])
       // of picture objects
       $scope.picturesByCategory = picturesByCategory;
     });
+
 
   $scope.pictureSrc = function(picture){
       return BASE_URL.replace("[width]", picture.width)

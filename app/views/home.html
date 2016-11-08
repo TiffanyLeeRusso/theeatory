@@ -1,6 +1,6 @@
 <div ng-controller="HomeCtrl">
 
-  <div id="category-menu-bar" class="category-menu-bar menu-bar">
+  <div id="category-menu-bar" class="category-menu menu-bar">
     <ul class="menu">
       <li ng-repeat="(category, categoryPictures) in picturesByCategory">
         <!-- <a href="#category-{{category | lowercase}}" >{{category}}</a> -->
@@ -21,4 +21,8 @@
       <list-item class="list-item-container"></grid-list-item>
     </ul>
 -->
+
+  <a id="goToTop" ng-click="scrollTo()" href="" class="hidden" go-to-top>
+    <div>&#8593; Top</div>
+  </a>
 </div>

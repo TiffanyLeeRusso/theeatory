@@ -1,6 +1,6 @@
 /* home.css */
 
-#category-menu-bar {
+#category-menu-bar, .category-menu {
   background:#360B00;
   color: #ccbbaa;
 }
@@ -51,4 +51,22 @@
   .list-item-container {
     width: 90%;
   }
+}
+
+
+#goToTop {
+  width: 75px;
+  height: 50px;
+  background: #360B00;
+  color: #ccbbaa;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#goToTop > div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
 }
