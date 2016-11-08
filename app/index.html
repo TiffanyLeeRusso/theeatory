@@ -10,19 +10,19 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/app.css">
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/list-item.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <base href="/">
 </head>
 <body>
 
   <div id="content">
 
     <div id="header">
-      <img src="images/logo.png" alt="The Eatory" class="logo"/>
+      <a href="#home"><img src="images/logo.png" alt="The Eatory" class="logo"/></a>
     </div>
 
     <div class="menu-bar">
@@ -51,8 +51,8 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
   <script src="app.js"></script>
-  <script src="home/home.js"></script>
-  <script src="location/location.js"></script>
+  <script src="controllers/home.js"></script>
+  <script src="controllers/location.js"></script>
   <script src="directives/list-item.js"></script>
 </body>
 </html>

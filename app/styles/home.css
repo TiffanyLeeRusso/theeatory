@@ -1,5 +1,23 @@
 /* home.css */
 
+#category-menu-bar {
+  background:#360B00;
+  color: #ccbbaa;
+}
+
+#category-menu-bar .menu li {
+  padding: 10px;
+}
+
+#category-menu-bar a:link,
+#category-menu-bar a:visited,
+#category-menu-bar a:hover,
+#category-menu-bar a:active {
+  border: none;
+  color: #ccbbaa;
+}
+
+
 .grid {
   list-style: none;
   text-align: center;

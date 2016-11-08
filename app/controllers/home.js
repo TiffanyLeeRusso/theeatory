@@ -2,7 +2,7 @@
 
 angular.module('theEatory.home', ['ngRoute'])
 
-.controller('HomeCtrl', function($scope, $http, $window) {
+.controller('HomeCtrl', function($scope, $http, $anchorScroll) {
 
   const BASE_URL = "http://lorempixel.com/[width]/[height]/food/[id]"
 
@@ -21,12 +21,19 @@ angular.module('theEatory.home', ['ngRoute'])
       // An object whose keys are categories and values are arrays
       // of picture objects
       $scope.picturesByCategory = picturesByCategory;
-      $window.console.log($scope.picturesByCategory)
     });
 
   $scope.pictureSrc = function(picture){
       return BASE_URL.replace("[width]", picture.width)
                      .replace("[height]", picture.height)
                      .replace("[id]", picture.id);
+  };
+
+  $scope.getCategoryId = function(category) {
+    return "category-" + category.toLowerCase();
+  };
+
+  $scope.scrollTo = function(id) {
+    $anchorScroll(id);
   };
 });

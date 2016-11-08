@@ -1,0 +1,24 @@
+<div ng-controller="HomeCtrl">
+
+  <div id="category-menu-bar" class="category-menu-bar menu-bar">
+    <ul class="menu">
+      <li ng-repeat="(category, categoryPictures) in picturesByCategory">
+        <!-- <a href="#category-{{category | lowercase}}" >{{category}}</a> -->
+        <a href="" ng-click="scrollTo(getCategoryId(category))">{{category}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div ng-repeat="(category, categoryPictures) in picturesByCategory" class="grid-container">
+    <h2 name="category-{{category | lowercase}}" id="category-{{category | lowercase}}">{{category}}</h2>
+    <ul class="grid">
+      <list-item ng-repeat="picture in categoryPictures" class="list-item-container"></grid-list-item>
+    </ul>
+  </div>
+
+<!-- Alternative without categories
+    <ul class="grid" ng-repeat="picture in pictures">
+      <list-item class="list-item-container"></grid-list-item>
+    </ul>
+-->
+</div>

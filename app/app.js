@@ -9,17 +9,18 @@ angular.module('theEatory', [
   'ui.bootstrap'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  //$locationProvider.html5Mode(true);
+  // TODO; hashPrefix is for in-page links
+  //$locationProvider.html5Mode(true).hashPrefix('!');
 
   $routeProvider.when('/', {
-    templateUrl: 'home/home.html',
+    templateUrl: 'views/home.html',
     controller: 'HomeCtrl'
   });
 
   $routeProvider.when('/home', { redirectTo: '/' });
 
   $routeProvider.when('/location', {
-    templateUrl: 'location/location.html',
+    templateUrl: 'views/location.html',
     controller: 'LocationCtrl'
   });
 

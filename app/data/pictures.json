@@ -28,6 +28,13 @@
       "description": "A small sushi treat including a California roll, tuna, and salmon.",
       "category": "Appetizers"
     },
+    { "id": 5,
+      "width": 200,
+      "height": 200,
+      "name": "Veggie Delight",
+      "description": "Various fresh veggies for the veggie lover.",
+      "category": "Appetizers"
+    },
     { "id": 6,
       "width": 200,
       "height": 200,
