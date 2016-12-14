@@ -2,34 +2,34 @@
 
 angular.module('theEatory.home', ['ngRoute'])
 
-.controller('HomeCtrl', function($scope, $http, $window, $anchorScroll) {
+.controller('HomeCtrl', function($scope, $http, $window, $anchorScroll, $uibModal) {
 
   const BASE_URL = "http://lorempixel.com/[width]/[height]/food/[id]"
 
   $scope.showGoToTop = false;
 
-  $http.get('data/pictures.json')
+  $http.get('data/food.json')
     .then(function(res){
-      $scope.pictures = res.data.pictureData; // array of picture objects
+      $scope.food = res.data.foodData; // array of objects describing our menu items
 
-      var picturesByCategory = {};
-      for(let i = 0; i < $scope.pictures.length; i++) {
-        if(!picturesByCategory[$scope.pictures[i].category]) {
-          picturesByCategory[$scope.pictures[i].category] = [];
+      var foodByCategory = {};
+      for(let i = 0; i < $scope.food.length; i++) {
+        if(!foodByCategory[$scope.food[i].category]) {
+          foodByCategory[$scope.food[i].category] = [];
         }
-        picturesByCategory[$scope.pictures[i].category].push($scope.pictures[i]);
+        foodByCategory[$scope.food[i].category].push($scope.food[i]);
       }
 
       // An object whose keys are categories and values are arrays
-      // of picture objects
-      $scope.picturesByCategory = picturesByCategory;
+      // of food objects
+      $scope.foodByCategory = foodByCategory;
     });
 
 
-  $scope.pictureSrc = function(picture){
-      return BASE_URL.replace("[width]", picture.width)
-                     .replace("[height]", picture.height)
-                     .replace("[id]", picture.id);
+  $scope.pictureSrc = function(foodItem){
+    return BASE_URL.replace("[width]", foodItem.width)
+                   .replace("[height]", foodItem.height)
+                   .replace("[id]", foodItem.id);
   };
 
   $scope.getCategoryId = function(category) {
@@ -38,5 +38,22 @@ angular.module('theEatory.home', ['ngRoute'])
 
   $scope.scrollTo = function(id) {
     $anchorScroll(id);
+  };
+
+  $scope.openReview = function(foodItem) {
+    var modalInstance = $uibModal.open({
+      animation: true,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'views/review-modal.html',
+      controller: 'ModalInstanceCtrl',
+      size: 'lg',
+      resolve: {
+        foodItem: foodItem,
+        reviews: function () {
+          return ["review1", "Review 2"];
+        }
+      }
+    });
   };
 });

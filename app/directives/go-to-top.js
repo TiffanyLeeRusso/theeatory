@@ -1,3 +1,5 @@
+'use strict'
+
 angular.module('theEatory.goToTop', [])
 
 .directive('goToTop', function($window) {

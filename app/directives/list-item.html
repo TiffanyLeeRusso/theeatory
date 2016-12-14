@@ -1,10 +1,11 @@
 <li class="list-item">
   <div class="image-container">
-    <img ng-src="{{pictureSrc(picture)}}"/>
+    <img ng-src="{{pictureSrc(foodItem)}}"/>
   </div>
   <div class="details">
-    <h4 class="name">{{picture.name}}</h4>
-    <div class="description">{{picture.description}}</div>
-    <!-- <button type="button" class="btn" style="background-color: #002545; color: #ccbbaa;">Reviews</button> -->
+    <h4 class="name">{{foodItem.name}}</h4>
+    <div class="description">{{foodItem.description}}</div>
+    <!-- TODO: finish the modal & functionality -->
+    <!-- <button type="button" class="btn reviews" ng-click="openReview(foodItem)">Reviews</button> -->
   </div>
 </li>

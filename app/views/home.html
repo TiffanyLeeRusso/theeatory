@@ -2,17 +2,17 @@
 
   <div id="category-menu-bar" class="category-menu menu-bar">
     <ul class="menu">
-      <li ng-repeat="(category, categoryPictures) in picturesByCategory">
+      <li ng-repeat="(category, categoryFoods) in foodByCategory">
         <!-- <a href="#category-{{category | lowercase}}" >{{category}}</a> -->
         <a href="" ng-click="scrollTo(getCategoryId(category))">{{category}}</a>
       </li>
     </ul>
   </div>
 
-  <div ng-repeat="(category, categoryPictures) in picturesByCategory" class="grid-container">
+  <div ng-repeat="(category, categoryFoods) in foodByCategory" class="grid-container">
     <h2 name="category-{{category | lowercase}}" id="category-{{category | lowercase}}">{{category}}</h2>
     <ul class="grid">
-      <list-item ng-repeat="picture in categoryPictures" class="list-item-container"></grid-list-item>
+      <list-item ng-repeat="foodItem in categoryFoods" class="list-item-container"></grid-list-item>
     </ul>
   </div>
 

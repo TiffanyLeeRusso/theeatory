@@ -31,7 +31,7 @@
 
 .menu-bar .menu li {
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
 }
 
 .menu-bar a:link,
@@ -41,9 +41,32 @@
   border: 1px solid #28211f;
   border-radius: 2px;
   color: #28211f;
-  padding: 10px;
-  text-decoration: none;
+  padding: 10px 20px;
 }
+
+.menu-bar .btn:link,
+.menu-bar .btn:visited,
+.menu-bar .btn:hover,
+.menu-bar .btn:active {
+  text-decoration: none;
+  background-color: #ccbbaa;
+}
+
+.menu-bar .btn:hover,
+.menu-bar .btn:focus,
+.menu-bar .btn.focus {
+  background-color: #28211F;
+  color: #ccbbaa;
+}
+.menu-bar .btn:focus,
+.menu-bar .btn:active:focus,
+.menu-bar .btn.active:focus,
+.menu-bar .btn.focus,
+.menu-bar .btn:active.focus,
+.menu-bar .btn.active.focus {
+  outline: 5px auto #28211f;
+}
+
 
 #footer {
   background: #28211f;
@@ -56,4 +79,26 @@
 
 #footer>div {
   padding:10px 0;
+}
+
+
+/* General styles */
+.btn {
+  background-color: #360B00;
+  color: #ccbbaa;
+  transition: all 0.2s ease-out;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  background-color: #691500;
+  color: #ccbbaa;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 5px auto #28211f;
 }

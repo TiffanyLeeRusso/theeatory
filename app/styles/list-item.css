@@ -36,3 +36,7 @@
 .list-item .details h4 {
   margin-top: 0;
 }
+
+.list-item .details .reviews {
+  margin-top: 20px;
+}
