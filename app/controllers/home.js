@@ -4,7 +4,7 @@ angular.module('theEatory.home', ['ngRoute'])
 
 .controller('HomeCtrl', function($scope, $http, $window, $anchorScroll, $uibModal) {
 
-  const BASE_URL = "http://lorempixel.com/[width]/[height]/food/[id]"
+  const BASE_URL = "https://lorempixel.com/[width]/[height]/food/[id]"
 
   $scope.showGoToTop = false;
 
